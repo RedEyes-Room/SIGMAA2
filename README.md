@@ -20,6 +20,6 @@ Creemos que muchos estudiantes llegan a sentirse presionados a la hora de elegir
 
 ### Autores
 
-* **Moíses Emiliano Arellano Ávila
-* **Joan de Jesús Méndez Pool
-* **Jorge David Oregón Baltazar
+* **Moíses Emiliano Arellano Ávila**
+* **Joan de Jesús Méndez Pool**
+* **Jorge David Oregón Baltazar**
