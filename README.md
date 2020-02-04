@@ -1,12 +1,13 @@
-# SIGMAA 2 (El nombre puede cambiar)
+# SOS Uni
 
 ### Software para web o móvil
 
-Orientada a página web, pero no descartamos aplicarla para móvil en un futuro
+Orientada a página web
 
 ### Objetivo general
 
-Un test vocacional para apoyar a los alumnos de preparatoria a elegir su carrera
+Es un test para apoyar a los alumnos de preparatoria a elegir su carrera universitaria, a través de una serie de preguntas relacionadas a las carreras en donde se podrá mostrar sus diferentes aptitudes,
+para evitar que se sientan frustrados o sin tiempo cuando tienen que elegir su carrera
 
 ### Objetivos específicos
 
