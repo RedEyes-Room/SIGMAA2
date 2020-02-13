@@ -6,8 +6,7 @@ Orientada a página web
 
 ### Objetivo general
 
-Es un test para apoyar a los alumnos de preparatoria a elegir su carrera universitaria, a través de una serie de preguntas relacionadas a las carreras en donde se podrá mostrar sus diferentes aptitudes,
-para evitar que se sientan frustrados o sin tiempo cuando tienen que elegir su carrera
+Desarrollar una aplicación tipo test para apoyar a los alumnos que están egresando de preparatoria a elegir su carrera universitaria
 
 ### Objetivos específicos
 
