@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1> Bienvenido <b>{{request.user.name}} {{request.user.lastname1}} {{request.user.lastname2}}</b></h1>
+        <p>
+            Esta página es exclusiva para usuarios registrados.
+        </p>
+        <br>
+        <a href="{% url 'ins_url' %}">Realizar test</a>
+        <hr />
+        <a href="{% url 'logout_url' %}">Cerrar sesión</a>   
+{% endblock %}

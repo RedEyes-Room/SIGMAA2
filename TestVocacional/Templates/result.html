@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1> Bienvenido <b>{{request.user.name}} {{request.user.lastname1}} {{request.user.lastname2}}</b></h1>
+        <p>
+            Los resultados son:
+        </p>
+        <br>
+        <p>
+            Response 1: {{r1}}
+        </p>
+{% endblock %}
