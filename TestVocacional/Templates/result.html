@@ -1,12 +1,36 @@
-{% extends 'base.html' %}
+{% extends 'dashboard.html' %}
 
 {% block content %}
-    <h1> Bienvenido <b>{{request.user.name}} {{request.user.lastname1}} {{request.user.lastname2}}</b></h1>
-        <p>
-            Los resultados son:
-        </p>
+    <div class="col-sm bg-light" >
+
+        <h1 style="text-align: center;"> <b>Te presentamos los resultados de tu Test Vocacional</b></h1>
+        <hr>
+        <p>Te puede interesar la carrera de:<br></p>
+        <h3 style="text-align: center;"><b>{{carrer}}</b></h3>
+        <hr>
+        {% if flag %}
+            <!--Render content-->
+            {% if label == "IDEIO" %}
+                {% include 'carreras/datos.html'%}
+            {% elif label == "IL" %}
+                {% include 'carreras/logistica.html'%}
+            {% elif label == "IA" %}
+                {% include 'carreras/ambiental.html'%}
+            {% elif label == "II" %}
+                {% include 'carreras/industrial.html'%}
+            {% elif label == "LT" %}
+                {% include 'carreras/turismo.html'%}
+            {% elif label == "NI" %}
+                {% include 'carreras/negocios.html'%}
+            {% endif %}
+
+        {% else %}
+            <h3 style="text-align: center;">No ha realizado ninguna prueba, puede iniciar ahora</h3>
+            <br><p style="text-align: center;">
+            <a href="{% url 'ins_url' %}" class="btn btn-danger">Empezar Test</a> </p>
+        {% endif %}
+
+
         <br>
-        <p>
-            Response 1: {{r1}}
-        </p>
+    </div>
 {% endblock %}

@@ -1,0 +1,121 @@
+<!--Modal Login init-->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold" style="background-color: brown; color:white;">  Inicia Sesión </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <form action="{% url 'login_url' %}" id='for' class="form-horizontal" role="form" method="post" enctype="multipart/form-data">            
+                    {% csrf_token %}
+                    <div class="md-form mb-1 input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input style="float:right;" type="email" name="email" id="defaultForm-email" class="form-control validate input-field"
+                        placeholder="Correo Electrónico">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+              
+                    <div class="md-form mb-1 input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input type="password" name="password" id="defaultForm-pass" class="form-control validate input-field"
+                        placeholder="Contraseña">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass"></label>
+                    </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <div class="md-form">
+                    <input type="submit" value='Enviar' class="btn btn-danger" >
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal Login end-->
+<!--**********************************************************************************************************************-->
+<!--Modal Register  init-->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold" style="background-color: brown; color:white;"> Registrarme </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <form action="{% url 'register_url' %}" id='for' class="form-horizontal" role="form" method="post" enctype="multipart/form-data">            
+                    {% csrf_token %}
+                    <!--User Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="fas fa-user icon"></i>
+                        <input  type="text" name="username" id="defaultForm-username" class="form-control validate input-field"
+                        placeholder="Usuario">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+                    <!--Email Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input  type="email" name="email" id="defaultForm-email" class="form-control validate input-field"
+                        placeholder="Correo Electrónico">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+                    <!--Name Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="far fa-user icon"></i>
+                        <input  type="text" name="name" id="defaultForm-name" class="form-control validate input-field"
+                        placeholder="Nombre">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+                    <!--Lastname1 Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="far fa-user icon"></i>
+                        <input  type="text" name="lastname1" id="defaultForm-lastname1" class="form-control validate input-field"
+                        placeholder="Apellido Paterno">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+                    <!--Lastname2 Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="far fa-user icon"></i>
+                        <input  type="text" name="lastname2" id="defaultForm-lastname2" class="form-control validate input-field"
+                        placeholder="Apellido Materno">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+                    <!--Age Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="fas fa-sort-numeric-up-alt icon"></i>
+                        <input  type="number" name="age" id="defaultForm-age" class="form-control validate input-field"
+                        placeholder="Edad">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email"></label>
+                    </div>
+                    <!--Password Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" name="password1" id="defaultForm-pass1" class="form-control validate input-field"
+                        placeholder="Contraseña">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass"></label>
+                    </div>
+                    <!--Password  Confirmation Field-->
+                    <div class="md-form mb-1 input-container">
+                        <i class="fas fa-lock icon"></i>
+                        <input type="password" name="password2" id="defaultForm-pass2" class="form-control validate input-field"
+                        placeholder="Confirma Contraseña">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass"></label>
+                    </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <div class="md-form">
+                    <input type="submit" value='Enviar' class="btn btn-danger" >
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal Register end-->
+

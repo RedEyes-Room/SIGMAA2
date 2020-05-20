@@ -74,13 +74,13 @@ body {
   border-radius: 5rem;
   overflow: hidden;
   border: none;
-  color: #3D5AFE;
+  color: brown;
 }
 .questionBox header .progressContainer > progress::-moz-progress-bar {
-  background: #3D5AFE;
+  background: brown;
 }
 .questionBox header .progressContainer > progress::-webkit-progress-value {
-  background: #3D5AFE;
+  background: brown;
 }
 .questionBox header .progressContainer > p {
   margin: 0;
@@ -181,12 +181,12 @@ body {
   border-color: rgba(0, 0, 0, 0.25);
 }
 .button.is-active {
-  background: #3D5AFE;
+  background: brown;
   color: white;
   border-color: transparent;
 }
 .button.is-active:hover {
-  background: #0a2ffe;
+  background: #fe0a0a;
 }
 
 @media screen and (min-width: 769px) {

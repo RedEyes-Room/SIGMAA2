@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+ 
  <link rel="stylesheet" href="{% static 'Styles/style.css' %}">
 
 </head>
@@ -31,7 +32,7 @@
 					<!--progress-->
 					<div class="progressContainer">
 						<progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100" max="100">[[(questionIndex/quiz.questions.length)*100]]%</progress>
-						<p>[[(questionIndex/quiz.questions.length)*100]]% complete</p>
+						<p>[[(questionIndex/quiz.questions.length*100).toFixed(2)]]% complete</p>
 					</div>
 					<!--/progress-->
 				</header>
@@ -74,10 +75,10 @@
 			<!--quizCompletedResult-->
 			<div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
 
-
+					<h1 style="text-align: center;"> ¡ Excelente !</h1><br>
 					<br>
-					<a class="button" @click="restart()">restart <i class="fa fa-refresh"></i></a>
-					<a class="button" @click="SendData()">Results <i class="fa fa-refresh"></i></a>
+					<a class="button" @click="restart()">Reiniciar<i class="fa fa-refresh"></i></a><br><br><br><br>
+					<a class="button" @click="SendData()">Resultado <i class="fas fa-marker"></i></a>
 
 				<!--/resultTitleBlock-->
 
@@ -96,6 +97,9 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
   <script  src= "{% static 'Scripts/script.js' %}"></script>
+
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/ae2bc38384.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

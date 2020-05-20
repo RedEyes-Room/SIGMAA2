@@ -5,7 +5,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from accounts.forms import RegistrationForm, AccountAuthenticationForm
 
 def index(request):
-    return render(request, "base.html", {})
+    return render(request, "home.html", {})
 
 
 def register(request):

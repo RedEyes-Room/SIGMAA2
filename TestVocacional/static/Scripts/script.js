@@ -275,7 +275,8 @@ var quiz = {
     { text: "No me interesa" },
     { text: "Me interesa poco"},
     { text: "Me interesa" },
-    { text: "Me interesa mucho" }]}]},
+    { text: "Me interesa mucho" }]}
+  ]};
 
 userResponseSkelaton = Array(quiz.questions.length).fill(null);
 

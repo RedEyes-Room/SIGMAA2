@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from accounts.models import Account
+from API.models import ResponseQuiz
 # Register your models here.
 class AccountAdmin(UserAdmin):
     list_display = ('email', 'name', 
@@ -14,3 +15,4 @@ class AccountAdmin(UserAdmin):
     fieldsets = ()
 
 admin.site.register(Account, AccountAdmin)
+admin.site.register(ResponseQuiz)

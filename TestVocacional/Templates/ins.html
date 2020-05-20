@@ -1,23 +1,29 @@
-{% extends 'base.html' %}
+{% extends 'dashboard.html' %}
 
 {% block content %}
-    <h1> Estimado <b>{{request.user.name}} {{request.user.lastname1}} {{request.user.lastname2}}</b></h1>
-        <p>
-            Las siguientes preguntas se relacionan con diversas actividad, debe indicar
-            que tanto le interesa las actividades presentadas dando click sobre ella,
-            se presentan las siguietes respuestas:
-        </p>
-        <p>
-            <ol>
-                <li>No me interesa</li>
-                <li>Me intesera poco</li>
-                <li>Me interesa</li>
-                <li>Me interesa mucho</li>
-            </ol>
-        </p>
-        <hr />
-        <a href="{% url 'dashboard' %}">Regresar</a> 
-        <hr />
-        <a href="{% url 'quiz' %}">Continuar</a> 
+    <div class="col-sm bg-light" >
 
+        <h1 style="text-align: center;"> Estimado: <br><b>
+        {{request.user.name}} {{request.user.lastname1}} {{request.user.lastname2}}</b></h1>
+            <p style="text-align: justify;">
+                Las siguientes preguntas se relacionan con diversas actividades, debe indicar
+                que tanto le interesaría realizar las actividades presentadas dando click sobre ella,
+                se presentan las siguietes opciones como respuestas:
+            </p>
+            <p>
+                <ul>
+                    <li>No me interesa.</li>
+                    <li>Me intesera poco.</li>
+                    <li>Me interesa.</li>
+                    <li>Me interesa mucho.</li>
+                </ul>
+            </p>
+            <div style="text-align: center;">
+            <hr >
+            <a href="{% url 'dashboard' %}" class="btn btn-dark">Regresar</a> 
+            <hr >
+            <a href="{% url 'quiz' %}" class="btn btn-danger">Continuar</a> 
+            </div>
+            <br> 
+        </div>
 {% endblock %}
